@@ -1,3 +1,3 @@
 myanmartools
-PyICU==2.10.3
+PyICU==2.10.2
 
