@@ -8,10 +8,14 @@ from tensorflow.keras.models import load_model
 detector = ZawgyiDetector()
 converter = Transliterator.createInstance('Zawgyi-my')
 
-model_path = "Models/syllable_model.keras"  
+url = "https://drive.google.com/file/d/1Y1uLXos6Mk-faLqCRIlt93dJisZmNwuF/view?usp=drive_link"
+gdown.download(url, "model.h5", quiet=False)
+model = tf.keras.models.load_model("model.h5")
+
+# model_path = "Models/syllable_model.keras"  
 vectorizer_path = "Tokenizer/syllable_tokenizer.pkl"
 
-model = load_model(model_path)
+# model = load_model(model_path)
 tokenizer = joblib.load(vectorizer_path)
 
 
