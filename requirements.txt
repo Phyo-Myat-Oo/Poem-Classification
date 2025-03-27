@@ -1,2 +1,6 @@
 myanmartools
 PyICU
+markdown-it-py
+mdurl
+pygments
+rich
