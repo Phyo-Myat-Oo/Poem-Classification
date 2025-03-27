@@ -1,2 +1,2 @@
 myanmartools
-pyicu-binary==2.10.2 
+pyicu-binary==2.7.4 
